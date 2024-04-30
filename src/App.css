@@ -1,38 +1,53 @@
 .App {
   text-align: center;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.datatablecontainer {
+  background-color: #062f58;
+  margin: auto;
+  color: rgb(66, 66, 65);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.datatablecontainer h2 {color: aliceblue;}
+.datatable {
+  margin: auto;
+  background-color: rgb(248, 100, 100);
+  margin: auto;
+}
+.datatable td {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  color: rgb(77, 73, 73);
+}
+.datatable button {
+  padding: 0.3rem;
+  min-width: 4rem;
+  color: rgb(255, 255, 255);
+  border-radius: 9px;
+  
+}
+.editbutton {
+  background-color: rgb(75, 248, 75);
+  &:hover {
+    background-color: green;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.deletebutton {
+  background-color: rgb(240, 47, 47);
+  &:hover {
+    background-color: rgb(124, 11, 11);
+  }
+}
+thead {height: 4rem}
+.nofound {
+  font-size: 4rem;
+  height: 70vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

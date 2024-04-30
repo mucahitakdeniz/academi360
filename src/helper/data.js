@@ -34,5 +34,68 @@ export const data= [
       "email": "david.brown@example.com",
       "city": "Phoenix"
     },
+    {
+      "id": 6,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 7,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 8,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 9,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 10,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 11,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 12,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 13,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 14,
+      "name": "David Brown",
+      "age": 32,
+      "email": "david.brown@example.com",
+      "city": "Phoenix"
+    },
   ]
   
