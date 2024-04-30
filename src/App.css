@@ -13,11 +13,13 @@
   padding: 1rem;
   padding-bottom: 2rem;
 }
-.datatablecontainer h2 {color: aliceblue;}
+.datatablecontainer h2 {
+  color: aliceblue;
+}
 .datatable {
   margin: auto;
-  background-color: rgb(248, 100, 100);
-  margin: auto;
+  background-color: rgb(250, 118, 118);
+ 
 }
 .datatable td {
   background-color: rgb(255, 255, 255);
@@ -29,7 +31,6 @@
   min-width: 4rem;
   color: rgb(255, 255, 255);
   border-radius: 9px;
-  
 }
 .editbutton {
   background-color: rgb(75, 248, 75);
@@ -43,11 +44,45 @@
     background-color: rgb(124, 11, 11);
   }
 }
-thead {height: 4rem}
+.r {
+  display: flex;
+  justify-content: space-around;
+}
+
 .nofound {
   font-size: 4rem;
-  height: 70vh;
+}
+.editmodal {
+  width: 25rem;
+  height: 30rem;
+  padding: 1rem;
+  background-color: #062f58;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #fcfcfc;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid rgb(94, 69, 69);
+  border-radius: 5px;
+}
+.editmodal > input {
+  margin: auto;
+  width: 70%;
+  height: 3rem;
+  border-radius: 5px;
+}
+.editmodal > button {
+  margin: auto;
+  margin-top: 2rem;
+  width: 70%;
+  height: 3rem;
+  background-color: rgb(66, 252, 128);
+  border-radius: 15px;
+  &:hover {
+    background-color: rgb(21, 238, 93);
+    color: aliceblue;
+  }
 }
