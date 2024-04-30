@@ -46,47 +46,45 @@ const DataTable = ({ data, ds_link }) => {
       <table className="datatable">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Email</th>
-            <th>City</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th className="th">ID</th>
+            <th className="th">Name</th>
+            <th className="th">Age</th>
+            <th className="th">Email</th>
+            <th className="th">City</th>
+            <th className="th">Edit</th>
+            <th className="th">Delete</th>
           </tr>
         </thead>
-        {data && data.length > 0 ? (
-          <tbody className="datatable">
-            {data.map((item) => (
-              <tr key={item.id}>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-                <td>{item.age}</td>
-                <td>{item.email}</td>
-                <td>{item.city}</td>
-                <td>
-                  <button
-                    className="editbutton"
-                    onClick={() => handleClickEdit(item.id)}
-                  >
-                    EDIT
-                  </button>
-                </td>
-                <td>
-                  <button
-                    className="deletebutton"
-                    onClick={() => handleDelete(item.id)}
-                  >
-                    DELETE
-                  </button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        ) : (
-          <NoFounds />
-        )}
+
+        <tbody className="datatable">
+          {data.map((item) => (
+            <tr key={item.id}>
+              <td>{item.id}</td>
+              <td>{item.name}</td>
+              <td>{item.age}</td>
+              <td>{item.email}</td>
+              <td>{item.city}</td>
+              <td>
+                <button
+                  className="editbutton"
+                  onClick={() => handleClickEdit(item.id)}
+                >
+                  EDIT
+                </button>
+              </td>
+              <td>
+                <button
+                  className="deletebutton"
+                  onClick={() => handleDelete(item.id)}
+                >
+                  DELETE
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
+      {data.length === 0 && <NoFounds />}
     </div>
   );
 };
